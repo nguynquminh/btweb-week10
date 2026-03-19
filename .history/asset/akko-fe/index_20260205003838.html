@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Akko | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../asset/css/home.css">
+</head>
+
+<body>
+    <nav class="navbar bg-white shadow">
+        <!--logo + nut + menu-->
+        <div class="container header-container">
+            <!--logo-->
+
+            <div class="header-logo">
+                <a href="index.html">
+                    <img src="../assets/images/logo.png" alt="Akko Logo" style="height: 50px;">
+                </a>
+            </div>
+            <!--tim kiem-->
+            <div class="header-search">
+                <input type="text" placeholder="Tìm kiếm sản phẩm">
+                <!-- <img class="search-icon" src="../assets/images/kinhlup.jpg" alt=""> -->
+
+            </div>
+
+            <!--menu-->
+            <ul class="header-menu">
+                <li><a href="#">KEYBOARD</a></li>
+                <li><a href="#">KIT BÀN PHÍM</a></li>
+                <li><a href="#">MOUSE</a></li>
+                <li><a href="#">KEYCAP</a></li>
+                <li><a href="#">SWITCH</a></li>
+                <li><a href="#">PHỤ KIỆN</a></li>
+                <li><a href="#">TIN TỨC</a></li>
+                <li class="menu-dropdown"><a href="#">HỖ TRỢ <span>⌄</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Driver Tải về</a></li>
+                        <hr>
+                        <li><a href="#">Kiểm tra bảo hành</a></li>
+                        <hr>
+                        <li><a href="#">Hướng dẫn bảo hành</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="header-right">
+                <a href="#" class="login-link">| ĐĂNG NHẬP</a>
+                <a href="#" class="cart-icon">
+                    <img src="../assets/images/cart.jpg" alt="Cart">
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    <main class="home">
+        <div id="carouselId" class="carousel slide" data-bs-ride="carousel" data-bs-wrap="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselId" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselId" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="products.html" class="banner-link">
+                        <img src="../assets/images/banner1.jpg" class="d-block w-100" alt="Bàn phím Akko 1">
+                        <div class="banner-overlay"></div>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="products.html" class="banner-link">
+                        <img src="../assets/images/banner2.jpg" class="d-block w-100" alt="Bàn phím Akko 2">
+                        <div class="banner-overlay"></div>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="products.html" class="banner-link">
+                        <img src="../assets/images/banner3.jpg" class="d-block w-100" alt="Bàn phím Akko 3">
+                        <div class="banner-overlay"></div>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="products.html" class="banner-link">
+                        <img src="../assets/images/banner4.jpg" class="d-block w-100" alt="Bàn phím Akko 4">
+                        <div class="banner-overlay"></div>
+                    </a>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Trở về</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Tiếp theo</span>
+            </button>
+        </div>
+        <div class="marquee-container">
+            <div class="marquee-content" aria-hidden="true">
+                <span>Mechanical keyboards the new technology trend</span>
+                <span class="dot" aria-hidden="true"></span>
+                <span>Mechanical keyboards the new technology trend</span>
+                <span class="dot" aria-hidden="true"></span>
+                <span>Mechanical keyboards the new technology trend</span>
+                <span class="dot" aria-hidden="true"></span>
+                <span>Mechanical keyboards the new technology trend</span>
+                <span class="dot" aria-hidden="true"></span>
+                <span>Mechanical keyboards the new technology trend</span>
+                <span class="dot" aria-hidden="true"></span>
+                <span>Mechanical keyboards the new technology trend</span>
+                <span class="dot" aria-hidden="true"></span>
+            </div>
+        </div>
+        <section class="home-intro">
+            <div class="container">
+                <div class="arc-heading" aria-hidden="false">
+                    <svg class="arc-svg" viewBox="0 0 500 180" role="img" aria-labelledby="arcTitle">
+                        <title id="arcTitle">AKKO arc heading</title>
+                        <defs>
+                            <path id="arcPath" d="M60,140 A190,90 0 0,1 440,140" />
+                        </defs>
+                        <text class="arc-top" text-anchor="middle">
+                            <textPath href="#arcPath" startOffset="50%">" AKKO LÀ GÌ "</textPath>
+                        </text>
+                    </svg>
+                </div>
+                <p>
+                    Akko là thương hiệu phụ kiện gaming nổi tiếng, chuyên về bàn phím cơ, chuột và keycap với thiết kế
+                    sáng tạo và chất lượng cao. Akko được cộng đồng game thủ và người dùng văn phòng yêu thích nhờ sự
+                    kết hợp giữa hiệu năng ổn định, độ hoàn thiện tốt và phong cách thiết kế độc đáo, hiện đại.
+                </p>
+            </div>
+        </section>
+        <section class="home-category container">
+            <div class="category-list">
+                <a href="products.html" class="category-item">
+                    <img src="../assets/images/logokeyboard.png" alt="Keyboard">
+                    <h3>KEYBOARD</h3>
+                </a>
+                <a href="products.html" class="category-item">
+                    <img src="../assets/images/logomouse.png" alt="Mouse">
+                    <h3>MOUSE</h3>
+                </a>
+                <a href="products.html" class="category-item">
+                    <img src="../assets/images/logokeycap.png" alt="Keycap">
+                    <h3>KEYCAP</h3>
+                </a>
+                <a href="products.html" class="category-item">
+                    <img src="../assets/images/logoaccess.png" alt="Accessories">
+                    <h3>ACCESSORIES</h3>
+                </a>
+            </div>
+        </section>
+        <hr style="margin: 50px 0; border: none; height: 1px; background-color: rgb(0, 0, 0);">
+        <section class="home-featured container">
+            <h2>
+                <div style="text-align: center;">SẢN PHẨM NỔI BẬT</div>
+                <div style="text-align: right;"><a href="products.html"
+                        style="color: rgba(0, 0, 0, 0.442); font-size: 13.5px;">Xem thêm</a>
+                </div>
+            </h2>
+
+            <div class="product-list">
+                <div class="product-item">
+                    <a href="products.html"> <img src="../assets/images/keyboard/keyboard3068.jpg"></a>
+                    <h4><a href="products.html">Bàn phím cơ AKKO 3068B Plus Blue on White (Bluetooth 5.0 / Wireless
+                            2.4Ghz / Hotswap
+                            / Foam tiêu
+                            âm / AKKO CS Jelly Sw)</a></h4>
+                    <p class="price">2.990.000₫</p>
+                </div>
+                <div class="product-item">
+                    <img src="../assets/images/keyboard/keyboard5087white.jpg">
+                    <h4><a href="products.html">Bàn phím AKKO 5087 RGB ASA – White (Foam tiêu âm / Hotswap / AKKO CS
+                            Jelly
+                            switch)</a></h4>
+                    <p class="price">3.490.000₫</p>
+                </div>
+                <div class="product-item">
+                    <img src="../assets/images/keyboard/keyboard3087.jpg">
+                    <h4><a href="products.html">Bàn phím cơ AKKO 3087 RF Matcha Red Bean (2.4Ghz / AKKO sw v3)</a></h4>
+                    <p class="price">1.389.000₫</p>
+                </div>
+
+                <div class="product-item">
+                    <img src="../assets/images/mouse/mouseag.jpg">
+                    <h4><a href="products.html">Chuột gaming AKKO – AG One 8K Joy Of Life (Cảm biến PAW3395 / 8K polling
+                            rate / Multi-modes)</a></h4>
+                    <p class="price">1.290.000₫</p>
+                </div>
+            </div>
+            <hr style="margin: 50px 0; border: none; height: 1px; background-color: rgb(0, 0, 0);">
+            <section class="home-sale container">
+                <h2>
+                    <div style="text-align: center;">SẢN PHẨM ĐANG GIẢM GIÁ</div>
+                    <div style="text-align: right;"><a href="products.html"
+                            style="color: rgba(0, 0, 0, 0.442); font-size: 13.5px;">Xem thêm</a>
+                    </div>
+                </h2>
+                <div class="sale-list">
+                    <div class="product-sale">
+                        <div class="sale-badge">-20%</div>
+                        <div class="product-img"><a href="products.html"><img
+                                    src="../assets/images/keyboard/keyboard3068.jpg" alt=""></a></div>
+                        <h4>
+                            <a href="products.html"> Bàn phím cơ AKKO 3068B Plus Blue on White
+                            </a>
+                        </h4>
+                        <p class="sale-price">
+                            <span class="old">2.990.000₫</span>
+                            <span class="new">2.390.000₫</span>
+                        </p>
+                    </div>
+                    <div class="product-sale disabled">
+                        <div class="sale-badge">-20%</div>
+                        <div class="product-img"><a href="products.html"><img
+                                    src="../assets/images/keyboard/keyboard3068.jpg" alt=""></a></div>
+                        <h4>
+                            <a href="products.html">Bàn phím cơ AKKO 3068B Plus Blue on White</a>
+                        </h4>
+                        <p class="sale-price">
+                            <span class="old">2.990.000₫</span>
+                            <span class="new">2.390.000₫</span>
+                        </p>
+                        <p class="stock out-stock" style="color: red; font-weight: bold;">Hết hàng</p>
+                    </div>
+                    <div class="product-sale">
+                        <div class="sale-badge">-20%</div>
+                        <div class="product-img"><a href="products.html"><img
+                                    src="../assets/images/keyboard/keyboard3068.jpg" alt=""></a></div>
+                        <h4>
+                            <a href="products.html">Bàn phím cơ AKKO 3068B Plus Blue on White</a>
+                        </h4>
+                        <p class="sale-price">
+                            <span class="old">2.990.000₫</span>
+                            <span class="new">2.390.000₫</span>
+                        </p>
+                    </div>
+                    <div class="product-sale disabled">
+                        <div class="sale-badge">-20%</div>
+                        <div class="product-img"><a href="products.html"><img
+                                    src="../assets/images/keyboard/keyboard3068.jpg" alt=""></a></div>
+                        <h4>
+                            <a href="products.html">Bàn phím cơ AKKO 3068B Plus Blue on White</a>
+                        </h4>
+                        <p class="sale-price">
+                            <span class="old">2.990.000₫</span>
+                            <span class="new">2.390.000₫</span>
+                        </p>
+                        <p class="stock out-stock" style="color: red; font-weight: bold;">Hết hàng</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <hr style="margin: 50px 0; border: none; height: 1px; background-color: rgb(0, 0, 0);">
+    </main>
+    <footer class="footer mt-5">
+        <div class="container py-5">
+            <div class="row">
+
+                <!-- Cột 1 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">AKKO GEAR VIỆT NAM</h5>
+                    <p class="footer-text">
+                        AKKO.VN cung cấp các sản phẩm phân phối chính hãng tại Việt Nam
+                    </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-envelope"></i></a>
+                        <a href="#"><i class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>
+
+                <!-- Cột 2 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">THÔNG TIN MỚI</h5>
+
+                    <div class="news-item">
+                        <span class="date-box"><strong>10</strong><br>Th2</span>
+                        <p>Hướng dẫn sử dụng bàn phím cơ AKKO 3098B và 3098N</p>
+                    </div>
+
+                    <div class="news-item">
+                        <span class="date-box"><strong>29</strong><br>Th5</span>
+                        <p>Tìm hiểu về Akko switch CS</p>
+                    </div>
+
+                    <div class="news-item">
+                        <span class="date-box"><strong>23</strong><br>Th9</span>
+                        <p>Tổng hợp driver bàn phím và chuột Akko</p>
+                    </div>
+                </div>
+
+                <!-- Cột 3 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">TAGS</h5>
+                    <div class="tag-list">
+                        <a href="#">3068B</a>
+                        <a href="#">3084</a>
+                        <a href="#">3087S</a>
+                        <a href="#">3098S</a>
+                        <a href="#">AKKO</a>
+                        <a href="#">RGB</a>
+                        <a href="#">Tokyo</a>
+                        <a href="#">MONET</a>
+                    </div>
+                </div>
+
+                <!-- Cột 4 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">NHẬN EMAIL TỪ AKKO</h5>
+                    <input type="email" class="form-control mb-2" placeholder="Email của bạn">
+                    <button class="btn btn-dark w-100">Đăng ký</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom text-center py-3">
+            Copyright 2026 © Akko.vn
+        </div>
+    </footer>
+
+</body>
+
+</html>

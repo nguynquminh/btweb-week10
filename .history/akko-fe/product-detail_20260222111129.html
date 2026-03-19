@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Akko | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/product-detail.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar bg-white shadow">
+            <!--logo + nut + menu-->
+            <div class="container header-container">
+                <!--logo-->
+                <div class="header-logo">
+                    <a href="index.html">
+                        <img src="../assets/images/logo.png" alt="Akko Logo" style="height: 50px;">
+                    </a>
+                </div>
+                <!--tim kiem-->
+                <div class="header-search">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm">
+                </div>
+
+                <!--menu-->
+                <ul class="header-menu">
+                    <li><a href="#">KEYBOARD</a></li>
+                    <li><a href="#">KIT BÀN PHÍM</a></li>
+                    <li><a href="#">MOUSE</a></li>
+                    <li><a href="#">KEYCAP</a></li>
+                    <li><a href="#">SWITCH</a></li>
+                    <li><a href="#">PHỤ KIỆN</a></li>
+                    <li><a href="#">TIN TỨC</a></li>
+                    <li class="menu-dropdown"><a href="#">HỖ TRỢ <span>⌄</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Driver Tải về</a></li>
+                            <hr>
+                            <li><a href="#">Kiểm tra bảo hành</a></li>
+                            <hr>
+                            <li><a href="#">Hướng dẫn bảo hành</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="header-right">
+                    <a href="#" class="login-link">| ĐĂNG NHẬP</a>
+                    <a href="#" class="cart-icon">
+                        <img src="../assets/images/cart.jpg" alt="Cart">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="shop-container">
+            <div class="container">
+                <div class="row row-large">
+                    <div class="col-lg-3">
+                        <aside class="shop-sidebar">
+                            <!-- Header -->
+                            <div class="sidebar-header">
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Danh mục sản phẩm</span>
+                            </div>
+
+                            <ul class="sidebar-nav">
+                                <!-- ── 1. KEYBOARD (accordion, active) ─────────────── -->
+                                <li class="nav-item-l0">
+                                    <input type="checkbox" id="acc-keyboard" class="accordion-toggle" />
+                                    <label for="acc-keyboard" class="accordion-label">
+                                        <span class="icon-cat">
+                                            Keyboard
+                                        </span>
+                                        <i class="bi bi-chevron-down chevron"></i>
+                                    </label>
+
+                                    <!-- Level 1 submenu -->
+                                    <ul class="submenu-l1">
+                                        <!-- 1-A. Chủ đề -->
+                                        <li class="nav-item-l1">
+                                            <input type="checkbox" id="acc-chude" class="accordion-toggle accordion-toggle-l1"/>
+                                            <label for="acc-chude" class="accordion-label-l1">
+                                                Chủ đề
+                                                <i class="bi bi-chevron-down chevron" style="font-size:11px;"></i>
+                                            </label>
+                                            <ul class="submenu-l2">
+                                                <li><a href="https://akko.vn/acrylic/">ACRYLIC</a></li>
+                                                <li><a href="https://akko.vn/black-pink/">Black Pink</a></li>
+                                                <li><a href="https://akko.vn/bilibili/">BiliBili</a></li>
+                                                <li><a href="https://akko.vn/dragon-ball-super/">Dragon Ball Super</a></li>
+                                                <li><a href="https://akko.vn/dragon-ball-z/">Dragon Ball Z</a></li>
+                                                <li><a href="https://akko.vn/ma-honkai-impact-iii/">Mã Honkai Impact III</a></li>
+                                                <li><a href="https://akko.vn/mod-series/">MOD Series</a></li>
+                                                <li><a href="https://akko.vn/ma-midnight/">Mã Midnight</a></li>
+                                                <li><a href="https://akko.vn/matcha-red-bean/">Matcha Red Bean</a></li>
+                                                <li><a href="https://akko.vn/monets-pond/">Monet's Pond</a></li>
+                                                <li><a href="https://akko.vn/mojike/">Mojike</a></li>
+                                                <li><a href="https://akko.vn/ma-ocean/">Mã Ocean</a></li>
+                                                <li><a href="https://akko.vn/pc-series/">PC Series</a></li>
+                                                <li><a href="https://akko.vn/one-piece/">One Piece</a></li>
+                                                <li><a href="https://akko.vn/horizon/">Horizon</a></li>
+                                                <li><a href="https://akko.vn/silent/">Silent</a></li>
+                                                <li><a href="https://akko.vn/steam-engine/">Steam Engine</a></li>
+                                                <li><a href="https://akko.vn/world-tour-tokyo/">World Tour Tokyo</a></li>
+                                                <li><a href="https://akko.vn/world-tour-tokyo-r2/">World Tour Tokyo R2</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <!-- 1-B. Kết nối & Led -->
+                                        <li class="nav-item-l1">
+                                            <input type="checkbox" id="acc-ketnoiled" class="accordion-toggle accordion-toggle-l1" />
+                                            <label for="acc-ketnoiled" class="accordion-label-l1">
+                                                Kết nối &amp; Led
+                                                <i class="bi bi-chevron-down chevron" style="font-size:11px;"></i>
+                                            </label>
+                                            <ul class="submenu-l2">
+                                                <li><a href="https://akko.vn/multi-modes/">Multi-modes</a></li>
+                                                <li><a href="https://akko.vn/bluetooth/">Bluetooth</a></li>
+                                                <li><a href="https://akko.vn/led-rgb/">Led RGB</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- ── 2. KIT Bàn phím ────────────────────────────────── -->
+                                <li class="nav-item-l0 nav-direct">
+                                    <a href="https://akko.vn/kit-ban-phim/">
+                                        KIT Bàn phím
+                                    </a>
+                                </li>
+
+                                <!-- ── 3. Keycap ─────────────────────────────────────── -->
+                                <li class="nav-item-l0 nav-direct">
+                                    <a href="https://akko.vn/key-cap/">
+                                        Keycap
+                                    </a>
+                                </li>
+
+                                <!-- ── 4. Switch ─────────────────────────────────────── -->
+                                <li class="nav-item-l0 nav-direct">
+                                    <a href="https://akko.vn/switch/">
+                                        Switch
+                                    </a>
+                                </li>
+
+                                <!-- ── 5. Mouse ──────────────────────────────────────── -->
+                                <li class="nav-item-l0 nav-direct">
+                                    <a href="https://akko.vn/mouse/">
+                                        Mouse
+                                    </a>
+                                </li>
+
+                                <!-- ── 6. Phụ kiện ───────────────────────────────────── -->
+                                <li class="nav-item-l0 nav-direct">
+                                    <a href="https://akko.vn/phu-kien/">
+                                        Phụ kiện
+                                    </a>
+                                </li>
+                            </ul>
+                        </aside>
+                    </div>
+
+                    <!-- Product main content - col large-9 -->
+                    <div class="col-lg-9 product-main-content">
+                        <div class="row">
+                            <div class="col-lg-6 product-placeholder">
+                                <div class="product-images relative mb-half has-hover woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 images" data-columns="4" style="opacity: 1;">
+
+  <div class="badge-container is-larger absolute left top z-1">
+		<div class="callout badge badge-circle"><div class="badge-inner secondary on-sale"><span class="onsale">-5%</span></div></div>
+</div>
+  <div class="image-tools absolute top show-on-hover right z-3">
+      </div>
+
+  <figure class="woocommerce-product-gallery__wrapper product-gallery-slider slider slider-nav-small mb-half is-draggable flickity-enabled" data-flickity-options="{
+                &quot;cellAlign&quot;: &quot;center&quot;,
+                &quot;wrapAround&quot;: true,
+                &quot;autoPlay&quot;: false,
+                &quot;prevNextButtons&quot;:true,
+                &quot;adaptiveHeight&quot;: true,
+                &quot;imagesLoaded&quot;: true,
+                &quot;lazyLoad&quot;: 1,
+                &quot;dragThreshold&quot; : 15,
+                &quot;pageDots&quot;: false,
+                &quot;rightToLeft&quot;: false       }" tabindex="0">
+      <div class="flickity-viewport" style="height: 428.125px; touch-action: pan-y;"><div class="flickity-slider" style="left: 0px; transform: translateX(0%);"><div data-thumb="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-100x100.png" class="woocommerce-product-gallery__image slide first is-selected" style="position: absolute; left: 0%;"><a href="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White.png"><img width="510" height="510" src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-510x510.png" class="wp-post-image skip-lazy" alt="" decoding="async" title="Ban-phim-co-AKKO-5075S-Black-on-White" data-caption="" data-src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White.png" data-large_image="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White.png" data-large_image_width="2000" data-large_image_height="2000" loading="lazy" srcset="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-510x510.png 510w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-400x400.png 400w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-800x800.png 800w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-280x280.png 280w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-768x768.png 768w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-1536x1536.png 1536w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-247x247.png 247w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-100x100.png 100w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-32x32.png 32w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White.png 2000w" sizes="(max-width: 510px) 100vw, 510px"></a></div><div data-thumb="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-1-100x100.jpg" class="woocommerce-product-gallery__image slide" aria-hidden="true" style="position: absolute; left: 100%;"><a href="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-1.jpg"><img width="510" height="340" src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-1-510x340.jpg" class="skip-lazy" alt="" decoding="async" title="Ban-phim-co-AKKO-5075S-Black-on-White-1" data-caption="" data-src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-1.jpg" data-large_image="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-1.jpg" data-large_image_width="2560" data-large_image_height="1707" loading="lazy" srcset="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-1-510x340.jpg 510w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-1-600x400.jpg 600w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-1-1200x800.jpg 1200w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-1-768x512.jpg 768w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-1-1536x1024.jpg 1536w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-1-2048x1366.jpg 2048w" sizes="(max-width: 510px) 100vw, 510px"></a></div><div data-thumb="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-2-100x100.jpg" class="woocommerce-product-gallery__image slide" aria-hidden="true" style="position: absolute; left: 200%;"><a href="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-2.jpg"><img width="510" height="765" src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-2-510x765.jpg" class="skip-lazy" alt="" decoding="async" title="Ban-phim-co-AKKO-5075S-Black-on-White-2" data-caption="" data-src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-2.jpg" data-large_image="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-2.jpg" data-large_image_width="1707" data-large_image_height="2560" loading="lazy" srcset="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-2-510x765.jpg 510w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-2-267x400.jpg 267w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-2-533x800.jpg 533w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-2-768x1152.jpg 768w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-2-1024x1536.jpg 1024w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-2-1366x2048.jpg 1366w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-2.jpg 1707w" sizes="(max-width: 510px) 100vw, 510px"></a></div><div data-thumb="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-3-100x100.jpg" class="woocommerce-product-gallery__image slide" aria-hidden="true" style="position: absolute; left: 300%;"><a href="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-3.jpg"><img width="510" height="340" src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-3-510x340.jpg" class="skip-lazy" alt="" decoding="async" title="Ban-phim-co-AKKO-5075S-Black-on-White-3" data-caption="" data-src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-3.jpg" data-large_image="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-3.jpg" data-large_image_width="2560" data-large_image_height="1707" loading="lazy" srcset="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-3-510x340.jpg 510w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-3-600x400.jpg 600w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-3-1200x800.jpg 1200w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-3-768x512.jpg 768w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-3-1536x1024.jpg 1536w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-3-2048x1366.jpg 2048w" sizes="(max-width: 510px) 100vw, 510px"></a></div><div data-thumb="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-4-100x100.jpg" class="woocommerce-product-gallery__image slide" aria-hidden="true" style="position: absolute; left: 400%;"><a href="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-4.jpg"><img width="510" height="340" src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-4-510x340.jpg" class="skip-lazy" alt="" decoding="async" title="Ban-phim-co-AKKO-5075S-Black-on-White-4" data-caption="" data-src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-4.jpg" data-large_image="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-4.jpg" data-large_image_width="2560" data-large_image_height="1707" loading="lazy" srcset="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-4-510x340.jpg 510w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-4-600x400.jpg 600w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-4-1200x800.jpg 1200w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-4-768x512.jpg 768w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-4-1536x1024.jpg 1536w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-4-2048x1366.jpg 2048w" sizes="(max-width: 510px) 100vw, 510px"></a></div><div data-thumb="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-5-100x100.jpg" class="woocommerce-product-gallery__image slide" aria-hidden="true" style="position: absolute; left: 500%;"><a href="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-5.jpg"><img width="510" height="340" src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-5-510x340.jpg" class="skip-lazy" alt="" decoding="async" title="Ban-phim-co-AKKO-5075S-Black-on-White-5" data-caption="" data-src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-5.jpg" data-large_image="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-5.jpg" data-large_image_width="2560" data-large_image_height="1707" loading="lazy" srcset="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-5-510x340.jpg 510w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-5-600x400.jpg 600w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-5-1200x800.jpg 1200w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-5-768x512.jpg 768w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-5-1536x1024.jpg 1536w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-5-2048x1366.jpg 2048w" sizes="(max-width: 510px) 100vw, 510px"></a></div><div data-thumb="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-6-100x100.jpg" class="woocommerce-product-gallery__image slide" aria-hidden="true" style="position: absolute; left: 600%;"><a href="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-6.jpg"><img width="510" height="765" src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-6-510x765.jpg" class="skip-lazy" alt="" decoding="async" title="Ban-phim-co-AKKO-5075S-Black-on-White-6" data-caption="" data-src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-6.jpg" data-large_image="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-6.jpg" data-large_image_width="1707" data-large_image_height="2560" loading="lazy" srcset="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-6-510x765.jpg 510w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-6-267x400.jpg 267w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-6-533x800.jpg 533w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-6-768x1152.jpg 768w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-6-1024x1536.jpg 1024w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-6-1366x2048.jpg 1366w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-6.jpg 1707w" sizes="(max-width: 510px) 100vw, 510px"></a></div><div data-thumb="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-7-100x100.jpg" class="woocommerce-product-gallery__image slide" aria-hidden="true" style="position: absolute; left: 700%;"><a href="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-7.jpg"><img width="510" height="340" src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-7-510x340.jpg" class="skip-lazy" alt="" decoding="async" title="Ban-phim-co-AKKO-5075S-Black-on-White-7" data-caption="" data-src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-7.jpg" data-large_image="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-7.jpg" data-large_image_width="2560" data-large_image_height="1707" loading="lazy" srcset="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-7-510x340.jpg 510w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-7-600x400.jpg 600w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-7-1200x800.jpg 1200w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-7-768x512.jpg 768w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-7-1536x1024.jpg 1536w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-7-2048x1366.jpg 2048w" sizes="(max-width: 510px) 100vw, 510px"></a></div><div data-thumb="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-8-100x100.jpg" class="woocommerce-product-gallery__image slide" aria-hidden="true" style="position: absolute; left: 800%;"><a href="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-8.jpg"><img width="510" height="765" src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-8-510x765.jpg" class="skip-lazy" alt="" decoding="async" title="Ban-phim-co-AKKO-5075S-Black-on-White-8" data-caption="" data-src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-8.jpg" data-large_image="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-8.jpg" data-large_image_width="1707" data-large_image_height="2560" loading="lazy" srcset="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-8-510x765.jpg 510w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-8-267x400.jpg 267w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-8-533x800.jpg 533w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-8-768x1152.jpg 768w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-8-1024x1536.jpg 1024w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-8-1366x2048.jpg 1366w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-8.jpg 1707w" sizes="(max-width: 510px) 100vw, 510px"></a></div><div data-thumb="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-9-100x100.jpg" class="woocommerce-product-gallery__image slide" aria-hidden="true" style="position: absolute; left: 900%;"><a href="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-9.jpg"><img width="510" height="340" src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-9-510x340.jpg" class="skip-lazy" alt="" decoding="async" title="Ban-phim-co-AKKO-5075S-Black-on-White-9" data-caption="" data-src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-9.jpg" data-large_image="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-9.jpg" data-large_image_width="2560" data-large_image_height="1707" loading="lazy" srcset="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-9-510x340.jpg 510w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-9-600x400.jpg 600w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-9-1200x800.jpg 1200w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-9-768x512.jpg 768w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-9-1536x1024.jpg 1536w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-9-2048x1366.jpg 2048w" sizes="(max-width: 510px) 100vw, 510px"></a></div><div data-thumb="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-10-100x100.jpg" class="woocommerce-product-gallery__image slide" aria-hidden="true" style="position: absolute; left: 1000%;"><a href="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-10.jpg"><img width="510" height="340" src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-10-510x340.jpg" class="skip-lazy" alt="" decoding="async" title="Ban-phim-co-AKKO-5075S-Black-on-White-10" data-caption="" data-src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-10.jpg" data-large_image="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-10.jpg" data-large_image_width="2560" data-large_image_height="1707" loading="lazy" srcset="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-10-510x340.jpg 510w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-10-600x400.jpg 600w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-10-1200x800.jpg 1200w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-10-768x512.jpg 768w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-10-1536x1024.jpg 1536w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-10-2048x1366.jpg 2048w" sizes="(max-width: 510px) 100vw, 510px"></a></div><div data-thumb="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-11-100x100.jpg" class="woocommerce-product-gallery__image slide" aria-hidden="true" style="position: absolute; left: 1100%;"><a href="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-11.jpg"><img width="510" height="340" src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-11-510x340.jpg" class="skip-lazy" alt="" decoding="async" title="Ban-phim-co-AKKO-5075S-Black-on-White-11" data-caption="" data-src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-11.jpg" data-large_image="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-11.jpg" data-large_image_width="2560" data-large_image_height="1707" loading="lazy" srcset="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-11-510x340.jpg 510w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-11-600x400.jpg 600w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-11-1200x800.jpg 1200w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-11-768x512.jpg 768w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-11-1536x1024.jpg 1536w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-11-2048x1366.jpg 2048w" sizes="(max-width: 510px) 100vw, 510px"></a></div><div data-thumb="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-12-100x100.jpg" class="woocommerce-product-gallery__image slide" aria-hidden="true" style="position: absolute; left: 1200%;"><a href="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-12.jpg"><img width="510" height="340" src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-12-510x340.jpg" class="skip-lazy" alt="" decoding="async" title="Ban-phim-co-AKKO-5075S-Black-on-White-12" data-caption="" data-src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-12.jpg" data-large_image="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-12.jpg" data-large_image_width="2560" data-large_image_height="1707" loading="lazy" srcset="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-12-510x340.jpg 510w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-12-600x400.jpg 600w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-12-1200x800.jpg 1200w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-12-768x512.jpg 768w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-12-1536x1024.jpg 1536w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-12-2048x1366.jpg 2048w" sizes="(max-width: 510px) 100vw, 510px"></a></div><div data-thumb="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-13-100x100.jpg" class="woocommerce-product-gallery__image slide" aria-hidden="true" style="position: absolute; left: 1300%;"><a href="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-13.jpg"><img width="510" height="765" src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-13-510x765.jpg" class="skip-lazy" alt="" decoding="async" title="Ban-phim-co-AKKO-5075S-Black-on-White-13" data-caption="" data-src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-13.jpg" data-large_image="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-13.jpg" data-large_image_width="1707" data-large_image_height="2560" loading="lazy" srcset="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-13-510x765.jpg 510w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-13-267x400.jpg 267w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-13-533x800.jpg 533w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-13-768x1152.jpg 768w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-13-1024x1536.jpg 1024w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-13-1366x2048.jpg 1366w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-13.jpg 1707w" sizes="(max-width: 510px) 100vw, 510px"></a></div><div data-thumb="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-14-100x100.jpg" class="woocommerce-product-gallery__image slide" aria-hidden="true" style="position: absolute; left: 1400%;"><a href="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-14.jpg"><img width="510" height="765" src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-14-510x765.jpg" class="skip-lazy" alt="" decoding="async" title="Ban-phim-co-AKKO-5075S-Black-on-White-14" data-caption="" data-src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-14.jpg" data-large_image="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-14.jpg" data-large_image_width="1707" data-large_image_height="2560" loading="lazy" srcset="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-14-510x765.jpg 510w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-14-267x400.jpg 267w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-14-533x800.jpg 533w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-14-768x1152.jpg 768w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-14-1024x1536.jpg 1024w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-14-1366x2048.jpg 1366w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-14.jpg 1707w" sizes="(max-width: 510px) 100vw, 510px"></a></div><div data-thumb="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-15-100x100.jpg" class="woocommerce-product-gallery__image slide" aria-hidden="true" style="position: absolute; left: 1500%;"><a href="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-15.jpg"><img width="510" height="340" src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-15-510x340.jpg" class="skip-lazy" alt="" decoding="async" title="Ban-phim-co-AKKO-5075S-Black-on-White-15" data-caption="" data-src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-15.jpg" data-large_image="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-15.jpg" data-large_image_width="2560" data-large_image_height="1707" loading="lazy" srcset="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-15-510x340.jpg 510w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-15-600x400.jpg 600w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-15-1200x800.jpg 1200w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-15-768x512.jpg 768w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-15-1536x1024.jpg 1536w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-15-2048x1366.jpg 2048w" sizes="(max-width: 510px) 100vw, 510px"></a></div><div data-thumb="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-16-100x100.jpg" class="woocommerce-product-gallery__image slide" aria-hidden="true" style="position: absolute; left: 1600%;"><a href="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-16.jpg"><img width="510" height="765" src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-16-510x765.jpg" class="skip-lazy" alt="" decoding="async" title="Ban-phim-co-AKKO-5075S-Black-on-White-16" data-caption="" data-src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-16.jpg" data-large_image="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-16.jpg" data-large_image_width="1707" data-large_image_height="2560" loading="lazy" srcset="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-16-510x765.jpg 510w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-16-267x400.jpg 267w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-16-533x800.jpg 533w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-16-768x1152.jpg 768w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-16-1024x1536.jpg 1024w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-16-1366x2048.jpg 1366w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-16.jpg 1707w" sizes="(max-width: 510px) 100vw, 510px"></a></div><div data-thumb="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-17-100x100.jpg" class="woocommerce-product-gallery__image slide" aria-hidden="true" style="position: absolute; left: 1700%;"><a href="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-17.jpg"><img width="510" height="765" src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-17-510x765.jpg" class="skip-lazy" alt="" decoding="async" title="Ban-phim-co-AKKO-5075S-Black-on-White-17" data-caption="" data-src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-17.jpg" data-large_image="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-17.jpg" data-large_image_width="1707" data-large_image_height="2560" loading="lazy" srcset="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-17-510x765.jpg 510w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-17-267x400.jpg 267w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-17-533x800.jpg 533w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-17-768x1152.jpg 768w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-17-1024x1536.jpg 1024w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-17-1366x2048.jpg 1366w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-17.jpg 1707w" sizes="(max-width: 510px) 100vw, 510px"></a></div><div data-thumb="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-18-100x100.jpg" class="woocommerce-product-gallery__image slide" aria-hidden="true" style="position: absolute; left: 1800%;"><a href="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-18.jpg"><img width="510" height="340" src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-18-510x340.jpg" class="skip-lazy" alt="" decoding="async" title="Ban-phim-co-AKKO-5075S-Black-on-White-18" data-caption="" data-src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-18.jpg" data-large_image="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-18.jpg" data-large_image_width="2560" data-large_image_height="1707" loading="lazy" srcset="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-18-510x340.jpg 510w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-18-600x400.jpg 600w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-18-1200x800.jpg 1200w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-18-768x512.jpg 768w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-18-1536x1024.jpg 1536w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-18-2048x1366.jpg 2048w" sizes="(max-width: 510px) 100vw, 510px"></a></div><div data-thumb="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-19-100x100.jpg" class="woocommerce-product-gallery__image slide" aria-hidden="true" style="position: absolute; left: 1900%;"><a href="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-19.jpg"><img width="510" height="340" src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-19-510x340.jpg" class="skip-lazy" alt="" decoding="async" title="Ban-phim-co-AKKO-5075S-Black-on-White-19" data-caption="" data-src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-19.jpg" data-large_image="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-19.jpg" data-large_image_width="2560" data-large_image_height="1707" loading="lazy" srcset="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-19-510x340.jpg 510w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-19-600x400.jpg 600w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-19-1200x800.jpg 1200w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-19-768x512.jpg 768w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-19-1536x1024.jpg 1536w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-19-2048x1366.jpg 2048w" sizes="(max-width: 510px) 100vw, 510px"></a></div><div data-thumb="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-20-100x100.jpg" class="woocommerce-product-gallery__image slide" aria-hidden="true" style="position: absolute; left: 2000%;"><a href="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-20.jpg"><img width="510" height="765" src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-20-510x765.jpg" class="skip-lazy" alt="" decoding="async" title="Ban-phim-co-AKKO-5075S-Black-on-White-20" data-caption="" data-src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-20.jpg" data-large_image="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-20.jpg" data-large_image_width="1707" data-large_image_height="2560" loading="lazy" srcset="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-20-510x765.jpg 510w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-20-267x400.jpg 267w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-20-533x800.jpg 533w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-20-768x1152.jpg 768w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-20-1024x1536.jpg 1024w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-20-1366x2048.jpg 1366w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-20.jpg 1707w" sizes="(max-width: 510px) 100vw, 510px"></a></div><div data-thumb="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-22-100x100.png" class="woocommerce-product-gallery__image slide" aria-hidden="true" style="position: absolute; left: 2100%;"><a href="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-22.png"><img width="510" height="287" src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-22-510x287.png" class="skip-lazy" alt="" decoding="async" title="Ban-phim-co-AKKO-5075S-Black-on-White-22" data-caption="" data-src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-22.png" data-large_image="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-22.png" data-large_image_width="2560" data-large_image_height="1440" loading="lazy" srcset="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-22-510x287.png 510w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-22-711x400.png 711w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-22-1400x788.png 1400w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-22-768x432.png 768w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-22-1536x864.png 1536w, https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White-22-2048x1152.png 2048w" sizes="(max-width: 510px) 100vw, 510px"></a></div></div></div><button class="flickity-button flickity-prev-next-button previous" type="button" aria-label="Previous"><svg class="flickity-button-icon" viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow"></path></svg></button><button class="flickity-button flickity-prev-next-button next" type="button" aria-label="Next"><svg class="flickity-button-icon" viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow" transform="translate(100, 100) rotate(180) "></path></svg></button></figure>
+
+  <div class="image-tools absolute bottom left z-3">
+        <a href="#product-zoom" class="zoom-button button is-outline circle icon tooltip hide-for-small tooltipstered">
+      <i class="icon-expand"></i>    </a>
+   </div>
+</div>
+                                    <!-- Product image placeholder -->
+                                    <div class="product-images col-lg-9">
+                                        <img width="400" height="400" src="https://akko.vn/wp-content/uploads/2026/02/Ban-phim-co-AKKO-5075S-Black-on-White.png" alt="">
+                                    </div>
+                            </div>
+                            <div class="col-lg-6 product-placeholder">
+                                <!-- Product info placeholder -->
+                                <div class="product-info col-lg-9">
+                                    <i class="bi bi-info-circle" style="font-size: 48px; display: block; margin-bottom: 15px;"></i>
+                                    Thông tin sản phẩm
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer mt-5">
+        <div class="container py-5">
+            <div class="row">
+                <!-- Cột 1 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">AKKO GEAR VIỆT NAM</h5>
+                    <p class="footer-text">
+                        AKKO.VN cung cấp các sản phẩm phân phối chính hãng tại Việt Nam
+                    </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-envelope"></i></a>
+                        <a href="#"><i class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>
+
+                <!-- Cột 2 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">THÔNG TIN MỚI</h5>
+
+                    <div class="news-item">
+                        <span class="date-box"><strong>10</strong><br>Th2</span>
+                        <p>Hướng dẫn sử dụng bàn phím cơ AKKO 3098B và 3098N</p>
+                    </div>
+
+                    <div class="news-item">
+                        <span class="date-box"><strong>29</strong><br>Th5</span>
+                        <p>Tìm hiểu về Akko switch CS</p>
+                    </div>
+
+                    <div class="news-item">
+                        <span class="date-box"><strong>23</strong><br>Th9</span>
+                        <p>Tổng hợp driver bàn phím và chuột Akko</p>
+                    </div>
+                </div>
+
+                <!-- Cột 3 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">TAGS</h5>
+                    <div class="tag-list">
+                        <a href="#">3068B</a>
+                        <a href="#">3084</a>
+                        <a href="#">3087S</a>
+                        <a href="#">3098S</a>
+                        <a href="#">AKKO</a>
+                        <a href="#">RGB</a>
+                        <a href="#">Tokyo</a>
+                        <a href="#">MONET</a>
+                    </div>
+                </div>
+
+                <!-- Cột 4 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">NHẬN EMAIL TỪ AKKO</h5>
+                    <input type="email" class="form-control mb-2" placeholder="Email của bạn">
+                    <button class="btn btn-dark w-100">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom text-center py-3">
+            Copyright 2026 © Akko.vn
+        </div>
+    </footer>
+</body>
+</html>

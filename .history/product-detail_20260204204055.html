@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm</title>
+    <link rel="stylesheet" href="./asset/css/product-detail.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- Main Content Container -->
+    <div class="container mt-5 product-detail">
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="breadcrumb">
+            <ul class="breadcrumb__list">
+                <li class="breadcrumb__item"><a href="#">Home</a></li>
+                <li class="breadcrumb__item"><a href="#">Category</a></li>
+                <li class="breadcrumb__item active" aria-current="page">Product Name</li>
+            </ul>
+        </nav>
+
+        <div class="product-detail__wrapper">
+            <!-- Product Image Gallery (left column) -->
+            <div class="product-gallery">
+                <!-- Main product image -->
+                <div class="gallery__main">
+                    <span class="gallery__badge">Sale</span>
+                    <img src="https://via.placeholder.com/500" alt="Product Main Image">
+                </div>
+                <!-- Thumbnail gallery -->
+                <div class="gallery__thumbnails">
+                    <img src="https://via.placeholder.com/100" class="thumbnail active" alt="Thumbnail 1">
+                    <img src="https://via.placeholder.com/100" class="thumbnail" alt="Thumbnail 2">
+                    <img src="https://via.placeholder.com/100" class="thumbnail" alt="Thumbnail 3">
+                    <img src="https://via.placeholder.com/100" class="thumbnail" alt="Thumbnail 4">
+                </div>
+            </div>
+
+            <!-- Product Information (right column) -->
+            <div class="product-info">
+                <h1 class="product-info__title">AKKO 5075 V3 Prunus Lannesiana Mechanical Keyboard</h1>
+
+                <div class="product-info__price">
+                    <span class="price__current">99.000.000 VNĐ</span>
+                    <span class="price__original">120.000.000 VNĐ</span>
+                    <span class="price__discount">-18%</span>
+                </div>
+
+                <div class="product-info__promotions">
+                    <h4 class="promotions__title">Promotions</h4>
+                    <ul class="promotions__list">
+                        <li>Free shipping for orders over 5.000.000 VNĐ</li>
+                        <li>Get a free keycap set with this purchase</li>
+                        <li>10% off for new customers</li>
+                    </ul>
+                </div>
+
+                <div class="product-info__quantity">
+                    <label for="quantity">Quantity:</label>
+                    <div class="quantity__controls">
+                        <button class="quantity__btn">-</button>
+                        <input type="number" id="quantity" value="1" min="1">
+                        <button class="quantity__btn">+</button>
+                    </div>
+                </div>
+
+                <div class="product-info__actions">
+                    <button class="btn btn-primary btn--large">Add to Cart</button>
+                    <button class="btn btn-success btn--large">Buy Now</button>
+                </div>
+
+                <div class="product-info__stores">
+                    <h5 class="stores__title">Buy on other platforms:</h5>
+                    <div class="stores__links">
+                        <a href="#" class="store__link store__link--shopee">Buy on Shopee</a>
+                        <a href="#" class="store__link store__link--tiktok">Buy on TikTok Shop</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Description & Specifications Section -->
+        <div class="product-tabs">
+            <div class="tabs__header" id="myTab" role="tablist">
+                <button class="tab__btn active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="true">Description</button>
+                <button class="tab__btn" id="specifications-tab" data-bs-toggle="tab" data-bs-target="#specifications" type="button" role="tab" aria-controls="specifications" aria-selected="false">Specifications</button>
+            </div>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab__content active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                    <div class="description__content">
+                        <h2>Detailed Product Description</h2>
+                        <p>This is a detailed description of the AKKO 5075 V3 Prunus Lannesiana Mechanical Keyboard. It features a unique design inspired by the Prunus Lannesiana (Cherry Blossom) tree, combining aesthetic beauty with high performance.</p>
+                        <p>The keyboard is equipped with Akko's renowned CS Jelly Pink switches, offering a smooth and responsive typing experience. Its 75% layout provides a compact form factor without sacrificing essential keys, making it ideal for both gaming and productivity.</p>
+                        <p>Keycaps are made from durable PBT material with a double-shot legends, ensuring longevity and resistance to shine. Connectivity is via a reliable USB-C interface.</p>
+                        <h3>Key Features:</h3>
+                        <ul>
+                            <li><strong>Exclusive Design:</strong> Prunus Lannesiana theme.</li>
+                            <li><strong>Akko CS Jelly Pink Switches:</strong> Smooth linear feel.</li>
+                            <li><strong>PBT Double-shot Keycaps:</strong> Durable and vibrant legends.</li>
+                            <li><strong>75% Layout:</strong> Compact yet functional.</li>
+                            <li><strong>USB-C Connectivity:</strong> Reliable and detachable.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab__content" id="specifications" role="tabpanel" aria-labelledby="specifications-tab">
+                    <div class="specifications__content">
+                        <h2>Technical Specifications</h2>
+                        <table class="specs__table">
+                            <tbody>
+                                <tr>
+                                    <td class="specs__label">Model</td>
+                                    <td class="specs__value">AKKO 5075 V3 Prunus Lannesiana</td>
+                                </tr>
+                                <tr>
+                                    <td class="specs__label">Layout</td>
+                                    <td class="specs__value">75% (82 keys)</td>
+                                </tr>
+                                <tr>
+                                    <td class="specs__label">Switch Type</td>
+                                    <td class="specs__value">Akko CS Jelly Pink</td>
+                                </tr>
+                                <tr>
+                                    <td class="specs__label">Keycap Material</td>
+                                    <td class="specs__value">PBT Double-shot</td>
+                                </tr>
+                                <tr>
+                                    <td class="specs__label">Connectivity</td>
+                                    <td class="specs__value">USB-C</td>
+                                </tr>
+                                <tr>
+                                    <td class="specs__label">Dimensions</td>
+                                    <td class="specs__value">335 x 145 x 35 mm</td>
+                                </tr>
+                                <tr>
+                                    <td class="specs__label">Weight</td>
+                                    <td class="specs__value">Approximately 1.2 kg</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Products Section -->
+        <div class="related-products">
+            <h2 class="related-products__title">Related Products</h2>
+            <div class="related-products__grid">
+                <div class="product-card">
+                    <a href="#">
+                        <div class="product-card__image">
+                            <img src="https://via.placeholder.com/200x150" alt="Related Product 1">
+                        </div>
+                        <div class="product-card__info">
+                            <h5 class="product-card__title">Related Keyboard 1 - Akko 3068B Plus Black & Cyan</h5>
+                            <div class="product-card__price">
+                                <span class="price__current">8.000.000 VNĐ</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card">
+                    <a href="#">
+                        <div class="product-card__image">
+                            <img src="https://via.placeholder.com/200x150" alt="Related Product 2">
+                        </div>
+                        <div class="product-card__info">
+                            <h5 class="product-card__title">Related Keyboard 2 - Akko 3087 V2 Steam Engine</h5>
+                            <div class="product-card__price">
+                                <span class="price__current">7.500.000 VNĐ</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card">
+                    <a href="#">
+                        <div class="product-card__image">
+                            <img src="https://via.placeholder.com/200x150" alt="Related Product 3">
+                        </div>
+                        <div class="product-card__info">
+                            <h5 class="product-card__title">Related Keyboard 3 - Akko 5087S Shine Through White</h5>
+                            <div class="product-card__price">
+                                <span class="price__current">6.000.000 VNĐ</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card">
+                    <a href="#">
+                        <div class="product-card__image">
+                            <img src="https://via.placeholder.com/200x150" alt="Related Product 4">
+                        </div>
+                        <div class="product-card__info">
+                            <h5 class="product-card__title">Related Keyboard 4 - Akko ACR67 Gasket Black</h5>
+                            <div class="product-card__price">
+                                <span class="price__current">9.000.000 VNĐ</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
