@@ -70,8 +70,7 @@
                     <span>Tạm tính</span>
                 </div>
                 <div class="cart-item">
-                    <button class="cart-remove" aria-label="Xóa sản phẩm khỏi giỏ"
-                        onclick="removeCartItem(this)">×</button>
+                    <button class="cart-remove" aria-label="Xóa sản phẩm khỏi giỏ">×</button>
                     <div class="cart-product">
                         <img class="cart-image"
                             src="https://akko.vn/wp-content/uploads/2025/08/Ban-phim-co-AKKO-5108B-Plus-Sakura-Miku-Akko-Piano-Pro-Switch-247x247.png"
@@ -86,11 +85,9 @@
                     </div>
                     <div class="cart-qty" data-label="Số lượng">
                         <div class="qty-control" role="group" aria-label="Điều chỉnh số lượng">
-                            <button class="qty-control__btn" aria-label="Giảm 1"
-                                onclick="changeQty(this, -1)">−</button>
-                            <input class="qty-control__input" type="number" value="1" min="0" aria-label="Số lượng"
-                                onchange="recalcRow(this)">
-                            <button class="qty-control__btn" aria-label="Tăng 1" onclick="changeQty(this, 1)">+</button>
+                            <button class="qty-control__btn" aria-label="Giảm 1">−</button>
+                            <input class="qty-control__input" type="number" value="1" min="0" aria-label="Số lượng">
+                            <button class="qty-control__btn" aria-label="Tăng 1">+</button>
                         </div>
                     </div>
                     <div class="cart-subtotal" data-label="Tạm tính">
@@ -187,5 +184,4 @@
         <div class="footer-bottom text-center py-3">Copyright 2026 © Akko.vn</div>
     </footer>
 </body>
-
 </html>
