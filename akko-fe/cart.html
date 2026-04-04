@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Akko | Cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/default-skin/default-skin.min.css" />
+    <link rel="stylesheet" href="../assets/css/cart.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar bg-white shadow">
+            <div class="container header-container">
+                <div class="header-logo">
+                    <a href="index.html">
+                        <img src="../assets/images/logo.png" alt="Akko Logo" style="height: 50px" />
+                    </a>
+                </div>
+                <div class="header-search">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm" />
+                </div>
+                <ul class="header-menu">
+                    <li><a href="#">KEYBOARD</a></li>
+                    <li><a href="#">KIT BÀN PHÍM</a></li>
+                    <li><a href="#">MOUSE</a></li>
+                    <li><a href="#">KEYCAP</a></li>
+                    <li><a href="#">SWITCH</a></li>
+                    <li><a href="#">PHỤ KIỆN</a></li>
+                    <li><a href="#">TIN TỨC</a></li>
+                    <li class="menu-dropdown">
+                        <a href="#">HỖ TRỢ <span>⌄</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Driver Tải về</a></li>
+                            <hr />
+                            <li><a href="#">Kiểm tra bảo hành</a></li>
+                            <hr />
+                            <li><a href="#">Hướng dẫn bảo hành</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="header-right">
+                    <a href="#" class="login-link">| ĐĂNG NHẬP</a>
+                    <a href="#" class="cart-icon">
+                        <img src="../assets/images/cart.jpg" alt="Cart" />
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="cart-page">
+        <div class="cart-content">
+            <section class="cart-list" aria-label="Sản phẩm trong giỏ hàng">
+                <div class="cart-header" aria-hidden="true">
+                    <span></span>
+                    <span>Sản phẩm</span>
+                    <span>Giá</span>
+                    <span>Số lượng</span>
+                    <span>Tạm tính</span>
+                </div>
+                <div class="cart-item">
+                    <button class="cart-remove" aria-label="Xóa sản phẩm khỏi giỏ"
+                        onclick="removeCartItem(this)">×</button>
+                    <div class="cart-product">
+                        <img class="cart-image"
+                            src="https://akko.vn/wp-content/uploads/2025/08/Ban-phim-co-AKKO-5108B-Plus-Sakura-Miku-Akko-Piano-Pro-Switch-247x247.png"
+                            alt="Bàn phím cơ AKKO 5108B Plus Sakura Miku Akko Piano Pro Switch" width="72" height="72"
+                            loading="lazy">
+                        <a class="cart-name" href="product-detail.html">
+                            Bàn phím cơ AKKO 5108B Plus<br>Sakura Miku Akko Piano Pro Switch
+                        </a>
+                    </div>
+                    <div class="cart-price" data-label="Giá">
+                        1,999,000₫
+                    </div>
+                    <div class="cart-qty" data-label="Số lượng">
+                        <div class="qty-control" role="group" aria-label="Điều chỉnh số lượng">
+                            <button class="qty-control__btn" aria-label="Giảm 1"
+                                onclick="changeQty(this, -1)">−</button>
+                            <input class="qty-control__input" type="number" value="1" min="0" aria-label="Số lượng"
+                                onchange="recalcRow(this)">
+                            <button class="qty-control__btn" aria-label="Tăng 1" onclick="changeQty(this, 1)">+</button>
+                        </div>
+                    </div>
+                    <div class="cart-subtotal" data-label="Tạm tính">
+                        1,999,000₫
+                    </div>
+                </div>
+                <div class="cart-footer">
+                    <a class="btn-continue" href="">← TIẾP TỤC XEM SẢN PHẨM</a>
+                </div>
+            </section>
+            <aside class="order-summary" aria-label="Tổng đơn hàng">
+                <div class="summary-title">Tổng cộng giỏ hàng</div>
+                <div class="summary-body">
+                    <div class="summary-line">
+                        <span class="summary-line-label">Tạm tính</span>
+                        <span class="summary-line-value" id="js-cart-subtotal">1,999,000₫</span>
+                    </div>
+                    <div class="summary-line summary-line--shipping">
+                        <span class="summary-line-label">Giao hàng</span>
+                        <span class="summary-shipping-note">Đơn hàng từ 250K được miễn phí giao hàng</span>
+                    </div>
+                    <div class="summary-total">
+                        <span>Tổng</span>
+                        <span id="js-cart-total">1,999,000₫</span>
+                    </div>
+                    <a class="btn-checkout" href="">
+                        Tiến hành thanh toán →
+                    </a>
+                </div>
+                <div class="coupon-section">
+                    <div class="coupon-section__title">
+                        <i class="icon-tag"></i>
+                        Mã ưu đãi
+                    </div>
+                    <div class="coupon-section__row">
+                        <input class="coupon-section__input" type="text" placeholder="Mã ưu đãi" aria-label="Mã ưu đãi">
+                        <button class="btn-apply-coupon">Áp dụng</button>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer class="footer mt-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">AKKO GEAR VIỆT NAM</h5>
+                    <p class="footer-text">
+                        AKKO.VN cung cấp các sản phẩm phân phối chính hãng tại Việt Nam
+                    </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-envelope"></i></a>
+                        <a href="#"><i class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">THÔNG TIN MỚI</h5>
+                    <div class="news-item">
+                        <span class="date-box"><strong>10</strong><br />Th2</span>
+                        <p>Hướng dẫn sử dụng bàn phím cơ AKKO 3098B và 3098N</p>
+                    </div>
+                    <div class="news-item">
+                        <span class="date-box"><strong>29</strong><br />Th5</span>
+                        <p>Tìm hiểu về Akko switch CS</p>
+                    </div>
+                    <div class="news-item">
+                        <span class="date-box"><strong>23</strong><br />Th9</span>
+                        <p>Tổng hợp driver bàn phím và chuột Akko</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">TAGS</h5>
+                    <div class="tag-list">
+                        <a href="#">3068B</a>
+                        <a href="#">3084</a>
+                        <a href="#">3087S</a>
+                        <a href="#">3098S</a>
+                        <a href="#">AKKO</a>
+                        <a href="#">RGB</a>
+                        <a href="#">Tokyo</a>
+                        <a href="#">MONET</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">NHẬN EMAIL TỪ AKKO</h5>
+                    <input type="email" class="form-control mb-2" placeholder="Email của bạn" />
+                    <button class="btn btn-dark w-100">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center py-3">Copyright 2026 © Akko.vn</div>
+    </footer>
+    <script>
+        function formatCurrency(n) {
+            return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(n);
+        }
+
+        function recalcRow(input) {
+            const row = input.closest('.cart-item');
+            const qty = parseInt(input.value) || 0;
+            const unitPriceText = row.querySelector('.cart-price').textContent.trim();
+            const unitPrice = parseFloat(unitPriceText.replace(/[^0-9]/g, ''));
+            const subtotal = qty * unitPrice;
+
+            row.querySelector('.cart-subtotal').textContent = formatCurrency(subtotal);
+
+            updateTotals();
+        }
+
+        function changeQty(btn, delta) {
+            const input = btn.closest('.qty-control').querySelector('input');
+            let val = parseInt(input.value) || 0;
+            val += delta;
+            if (val < 0) val = 0;
+            input.value = val;
+            recalcRow(input);
+        }
+
+        function updateTotals() {
+            const rows = document.querySelectorAll('.cart-item');
+            let subtotal = 0;
+
+            rows.forEach(row => {
+                const subtotalText = row.querySelector('.cart-subtotal').textContent.trim();
+                subtotal += parseFloat(subtotalText.replace(/[^0-9]/g, ''));
+            });
+
+            const shipping = subtotal >= 250000 ? 0 : 30000;
+            const total = subtotal + shipping;
+
+            document.getElementById('js-cart-subtotal').textContent = formatCurrency(subtotal);
+            document.getElementById('js-cart-total').textContent = formatCurrency(total);
+        }
+
+        function removeCartItem(btn) {
+            const row = btn.closest('.cart-item');
+            row.remove();
+            updateTotals();
+        }
+
+        document.addEventListener('DOMContentLoaded', updateTotals);
+
+    </script>
+</body>
+
+</html>
