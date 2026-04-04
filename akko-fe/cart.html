@@ -186,57 +186,6 @@
         </div>
         <div class="footer-bottom text-center py-3">Copyright 2026 © Akko.vn</div>
     </footer>
-    <script>
-        function formatCurrency(n) {
-            return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(n);
-        }
-
-        function recalcRow(input) {
-            const row = input.closest('.cart-item');
-            const qty = parseInt(input.value) || 0;
-            const unitPriceText = row.querySelector('.cart-price').textContent.trim();
-            const unitPrice = parseFloat(unitPriceText.replace(/[^0-9]/g, ''));
-            const subtotal = qty * unitPrice;
-
-            row.querySelector('.cart-subtotal').textContent = formatCurrency(subtotal);
-
-            updateTotals();
-        }
-
-        function changeQty(btn, delta) {
-            const input = btn.closest('.qty-control').querySelector('input');
-            let val = parseInt(input.value) || 0;
-            val += delta;
-            if (val < 0) val = 0;
-            input.value = val;
-            recalcRow(input);
-        }
-
-        function updateTotals() {
-            const rows = document.querySelectorAll('.cart-item');
-            let subtotal = 0;
-
-            rows.forEach(row => {
-                const subtotalText = row.querySelector('.cart-subtotal').textContent.trim();
-                subtotal += parseFloat(subtotalText.replace(/[^0-9]/g, ''));
-            });
-
-            const shipping = subtotal >= 250000 ? 0 : 30000;
-            const total = subtotal + shipping;
-
-            document.getElementById('js-cart-subtotal').textContent = formatCurrency(subtotal);
-            document.getElementById('js-cart-total').textContent = formatCurrency(total);
-        }
-
-        function removeCartItem(btn) {
-            const row = btn.closest('.cart-item');
-            row.remove();
-            updateTotals();
-        }
-
-        document.addEventListener('DOMContentLoaded', updateTotals);
-
-    </script>
 </body>
 
 </html>
